@@ -1,0 +1,22 @@
+{
+  "name": "epochs-of-aether",
+  "version": "0.1.0",
+  "description": "Fantasy grand strategy with persistent, independent AI nations.",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "node --test \"tests/**/*.test.ts\"",
+    "typecheck": "tsc --noEmit",
+    "sim": "node scripts/simulate.ts",
+    "check": "npm run typecheck && npm test && npm run build"
+  },
+  "engines": {
+    "node": ">=22.18"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "esbuild": "^0.28.0",
+    "typescript": "^6.0.0"
+  }
+}
